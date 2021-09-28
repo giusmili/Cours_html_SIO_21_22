@@ -39,3 +39,26 @@
 
 </html>
 ```
+## Exemple de reset css
+```css
+    /* 
+reset css
+tailles, marges, padding, link
+
+*/
+html{ /* sélecteur propriété valeur */
+    font-size: 62.5%;  /* 1.000rem root em 10px */
+}
+body{
+    font: 1.6rem sans-serif; /* 16px */
+    margin: 0;  
+}
+h1,h2,h3,h4,p,ol,ul,figure,dd{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+```
