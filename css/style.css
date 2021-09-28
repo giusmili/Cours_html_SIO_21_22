@@ -1,0 +1,49 @@
+/* 
+reset css
+tailles, marges, padding, link
+
+*/
+html{ /* sélecteur propriété valeur */
+    font-size: 62.5%;  /* 1.000rem root em 10px */
+}
+body{
+    font: 1.6rem sans-serif; /* 16px */
+    margin: 0;  
+}
+h1,h2,h3,h4,p,ol,ul,figure,dd{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+/* theme */
+/* Palette graphique */
+:root{
+    --color-default: rgb(0,0,0);
+    --color-header-text: #fff;
+    --color-primary: #5298c6;
+    --color-alert: #c0392b;
+    --color-success: #068a22;
+    --color-warning: rgba(253, 203, 110,1.0);
+}
+/* variable appelée */
+header{
+    background-color: var(--color-default);
+    line-height: 6.0rem;
+}
+header > h1{
+    color: var(--color-header-text);
+    text-align: center;
+}
+main{
+    max-width: 80.0rem;
+    border: solid .1rem var(--color-default);
+    padding: 1.0rem;
+    margin: 5.0rem auto 1.0rem;
+}
+figure > img{
+    display: block;
+    width: 100%;
+}
