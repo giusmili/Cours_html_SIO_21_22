@@ -1,4 +1,4 @@
-/* 
+/* http://sharemycode.fr/kgp
 reset css
 tailles, marges, padding, link
 
@@ -38,13 +38,48 @@ header > h1{
     text-align: center;
 }
 main{
-    max-width: 80.0rem;
-    border: solid .1rem var(--color-default);
+    max-width: 90.0rem;
+    border: solid .1rem transparent;
     padding: 1.0rem;
     margin: 5.0rem auto 1.0rem;
+    box-shadow: 0 0 3.0rem rgb(161, 159, 159);
 }
 figure > img{
     display: block;
     width: 100%;
+    margin: .1rem 0;
 }
 /* la suite */
+section h2, section figure figcaption h3{
+    background-color: var(--color-primary);
+    color: var(--color-header-text);
+    line-height: 4.5rem;
+    padding: .5rem;
+    font-size: x-large;
+}
+section p, section ul, section ol{
+    line-height: 2.6rem;
+}
+/* placer les icones */
+section h2::before, section figure figcaption h3:before{
+    content:'\2714';
+    margin-right: .3rem;
+}
+main section + section h2{ /* à partir du 1er élément */
+    background-color: var(--color-alert);
+}
+main section:last-child h2{ /* dernier élément */
+    background-color: #ccc;
+    color: #222;
+}
+main section:nth-child(2) h2{
+    background-color: var(--color-success);
+}
+main section:nth-of-type(3) h2{
+    background-color: var(--color-warning);
+    color: #222;
+}
+section figure figcaption h3{
+    background-color: rgb(245, 135, 9);
+    color: #222;
+}
