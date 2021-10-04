@@ -37,7 +37,7 @@ header > h1{
     color: var(--color-header-text);
     text-align: center;
 }
-main{
+main, footer{
     max-width: 90.0rem;
     border: solid .1rem transparent;
     padding: 1.0rem;
@@ -82,4 +82,36 @@ main section:nth-of-type(3) h2{
 section figure figcaption h3{
     background-color: rgb(245, 135, 9);
     color: #222;
+}
+footer *{
+    text-align: center;
+    color: #999;
+}
+/* responsive */
+@media screen and (max-width: 80.0rem){
+    main,footer{
+        margin:.1rem;
+    }
+    header h1{
+        background-color: rgb(189, 40, 40);
+        font-size: x-large;
+    }
+    section h2, section figure figcaption h3{
+        font-size: large;
+    }
+    section figure figcaption p, section p{
+        text-align: justify;
+    }
+    footer{
+        min-height: 20vh;/* hauteur 1/20 d'écran */
+        display: grid;
+        align-items: center;
+    }
+
+}
+@media screen and (orientation:landscape){/* format paysage */
+    header h1{
+        background-color: #222;
+        font-size: xx-large;
+    }
 }
