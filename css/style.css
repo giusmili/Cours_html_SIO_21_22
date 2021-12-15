@@ -3,20 +3,25 @@ reset css
 tailles, marges, padding, link
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 html{ /* sélecteur propriété valeur */
     font-size: 62.5%;  /* 1.000rem root em 10px */
 }
 body{
-    font: 1.6rem sans-serif; /* 16px */
-    margin: 0;  
+    font: 1.6rem "Roboto",sans-serif; /* 16px */
+    margin: 0;
+    color: #222;
+    letter-spacing: .01rem;
+    
 }
 h1,h2,h3,h4,p,ol,ul,figure,dd{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
 }
 h1,h2,h3,h4{
-    font-weight: normal;
+    font-weight: 300;
 }
 /* theme */
 /* Palette graphique */
@@ -36,6 +41,7 @@ header{
 header > h1{
     color: var(--color-header-text);
     text-align: center;
+    font-size: 4.6rem;
 }
 main, footer{
     max-width: 90.0rem;
@@ -91,6 +97,7 @@ footer *{
 @media screen and (max-width: 80.0rem){
     main,footer{
         margin:.1rem;
+        box-shadow: 0 0 0 0;
     }
     header h1{
         background-color: rgb(189, 40, 40);
